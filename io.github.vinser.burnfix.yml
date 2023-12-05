@@ -19,7 +19,7 @@ modules:
   - name: burnfix
     buildsystem: simple
     build-commands:
-      - $GOROOT/bin/go build -trimpath -o burnfix
+      - $GOROOT/bin/go build -o burnfix -trimpath -buildvcs=false -ldflags="-s -w"
       - install -Dm00755 burnfix $FLATPAK_DEST/bin/burnfix
       - install -Dm00644 burnfix.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
       - install -Dm00644 $FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
