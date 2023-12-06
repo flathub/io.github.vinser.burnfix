@@ -1,6 +1,6 @@
 app-id: io.github.vinser.burnfix
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.golang
@@ -9,7 +9,8 @@ command: burnfix
 finish-args:
     - --share=ipc 
     - --socket=x11
-    - --device=dri 
+    - --device=dri
+     
 build-options:
   env:
     - GOBIN=/app/bin
@@ -23,10 +24,10 @@ modules:
       - install -Dm00755 burnfix $FLATPAK_DEST/bin/burnfix
       - install -Dm00644 burnfix.svg $FLATPAK_DEST/share/icons/hicolor/scalable/apps/$FLATPAK_ID.svg
       - install -Dm00644 $FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
-      - install -Dm00644 $FLATPAK_ID.appdata.xml $FLATPAK_DEST/share/appdata/$FLATPAK_ID.appdata.xml
+      - install -Dm00644 $FLATPAK_ID.metainfo.xml $FLATPAK_DEST/share/metainfo/$FLATPAK_ID.metainfo.xml
     sources:
       - type: file
-        path: io.github.vinser.burnfix.appdata.xml
+        path: io.github.vinser.burnfix.metainfo.xml
       - type: file
         path: io.github.vinser.burnfix.desktop
       - type: dir
