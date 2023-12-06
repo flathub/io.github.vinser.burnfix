@@ -1,0 +1,3 @@
+[submodule "burnfix"]
+	path = burnfix
+	url = https://github.com/vinser/burnfix
