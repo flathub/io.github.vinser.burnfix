@@ -28,4 +28,4 @@ modules:
     sources:
       - type: archive
         url: "https://github.com/vinser/burnfix/archive/refs/tags/v1.1.0.tar.gz"
-        sha256: 3faee7106231834cda98c36293d8720b798e642fcc01b1b257ad6bb9c17cc5dc
+        sha256: 1d0816f99f46649f8be48337fad7923eb1d841ec3f670e1511c07a13f3676521
