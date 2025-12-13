@@ -1,6 +1,6 @@
 app-id: io.github.vinser.burnfix
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.golang
@@ -28,4 +28,4 @@ modules:
     sources:
       - type: archive
         url: "https://github.com/vinser/burnfix/archive/refs/tags/v1.1.1.tar.gz"
-        sha256: bfaa82e573f089af2ab1741cec9b3abbd92aae7a434a8f71b168baf0b263d24d
+        sha256: a1a0af3afdd04dff34a2a219f33bb0765009368cb9d6e6573621b4284c103110
