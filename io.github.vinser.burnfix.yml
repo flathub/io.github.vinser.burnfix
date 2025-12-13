@@ -1,6 +1,6 @@
 app-id: io.github.vinser.burnfix
 runtime: org.freedesktop.Platform
-runtime-version: '23.08'
+runtime-version: '25.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
     - org.freedesktop.Sdk.Extension.golang
@@ -26,9 +26,6 @@ modules:
       - install -Dm00644 $FLATPAK_ID.desktop $FLATPAK_DEST/share/applications/$FLATPAK_ID.desktop
       - install -Dm00644 $FLATPAK_ID.metainfo.xml $FLATPAK_DEST/share/metainfo/$FLATPAK_ID.metainfo.xml
     sources:
-      - type: file
-        path: io.github.vinser.burnfix.metainfo.xml
-      - type: file
-        path: io.github.vinser.burnfix.desktop
-      - type: dir
-        path: ./burnfix
+      - type: archive
+        url: "https://github.com/vinser/burnfix/archive/refs/tags/v1.1.1.tar.gz"
+        sha256: a1a0af3afdd04dff34a2a219f33bb0765009368cb9d6e6573621b4284c103110
